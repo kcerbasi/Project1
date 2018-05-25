@@ -1,0 +1,32 @@
+body {
+    font-family:sans-serif , Arial;
+    color: #DBA4A4;
+    font-size: 16px;
+}
+
+.header{
+width:100%;
+Display:flex;
+Flex-wrap: nowrap;
+text-align:right;
+}
+.featured-work{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cover{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+.responsive{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+.logo{
+  width:50;
+  height:50px;
