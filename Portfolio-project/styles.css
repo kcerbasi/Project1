@@ -7,35 +7,13 @@ body,html{
   font-size: 16px;
 }
 
-.responsive-img {
-  max-width: 100%;
-  height:auto;
-}
+.container{
+  display:flex;
+  flex-flow:row wrap;
+  }
 
-.featured-work {
-  margin-top: 30px;
-}
-
-.section-hdr, .featured-hdr {
-  text-align: center;
-}
-
-.featured-hdr {
-  margin: 20px 0;
-}
-
-.header {
-  justify-content: space-evenly;
-  text-align: right;
-  align-content:right;
-}
-
-.header-title {
-  text-align:right;
-}
-.title-hdr {
-  text-align:right;
-}
+.container > * {
+  flex:1 100%;
 }
 
 .logo {
@@ -43,35 +21,38 @@ body,html{
   height: 50px;
   margin: 0px auto;
 }
+.cover{
+  margin:30px 30px 30px 30px;
+}
+.responsive-img {
+  max-width: 100%;
+  height:auto;
+  margin:30px 30px 30px 30px;
+}
+
+.featured-work {
+  margin-top: 30px;
+}
+
+.main-hdr {
+  text-align: right;
+  margin:0px 0px 0px 0px;
+}
 
 @media screen and (min-width: 500px) {
-.content {
-  display: flex;
-  max-width: 100%;
-  align-content: space-evenly;
-  height:auto;
-}
-.fw-item {
-  max-width: 33.33%;
-}
+.project{
+  flex: 1 auto;
 }
 
-@media screen and (min-width: 720px) {
-.featured-work {
-  justify-content: center;
-  display: flex;
-  max-width: 1440px;
-  align-content: space-evenly;
-}
-.fw-item {
-  width: 33.3%
-}
+@media screen and (min-width: 800px) {
+.main{ flex:2 0px;}
+.project{
+  width:33.33%;
 }
 
-.fw-item {
-  margin: 20px 20px 20px 0;
 
-}
+
+
 
 /*Referenced Joe Mesots YouTube Videos for guidance on this project
 https://www.youtube.com/channel/UCZI03QJQ2jttnNZuVqYVEiA// //
